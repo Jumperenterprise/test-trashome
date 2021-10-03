@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #6CC57C;
+    --bg-color-secondary:#D0F0D6 ;
+    --black-color: #23233C;
+    --gray-color: #D0F0D6;
+    --white-color: #F2F6FF;
+    --bg-primary: #f2f6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rwd-main-container {
+    overflow-x: hidden;
+}
+
+.nav-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #7F8DA0;
+}
+
+.bg-color {
+    background-color: var(--bg-primary);
+}
+
+.a {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    color: var(--black-color);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.title-2 {
+    color: var(--primary-color);
+}
+
+.title-3 {
+    color: #0a8521;
+    font-weight: bold;
+}
+
+.bg-button {
+    background-color: var(--black-color) !important;
+    width: 42% !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em !important;
+    animation: pulse;
+}
+
+.animate__animated .animate__pulse {
+    --animate-duration: 10s;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 33%
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background: var(--black-color);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.icons-header {
+    width: 7%;
+}
+
+.header-image {
+    width: 30em;
+}
+
+.font-size {
+    font-size: 0.9em !important;
+    font-weight: 100 !important;
+}
+
+.bg-card {
+    background-color: #D0F0D6;
+    background-image: url('./Foto\ \(2\).png');
+    background-size: cover;
+}
+
+.card {
+    border: 2px dashed #51EFC5  !important;
+}
+
+.bg-footer {
+    background-color: var(--gray-color);
+    background-image: url('./Enmascarar\ grupo\ 9.png');
+    background-size: cover;
+}
+
+.street-city {
+    margin-top: 200px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.auto-rojo {
+    position: absolute;
+    z-index: 10;
+    animation-duration: 10s;
+    animation-name: carroAvanzando;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carroAvanzando {
+    0% {
+        transform: translate(800px, -700px);
+    }
+    100% {
+        transform: translate(0px, -250px);
+    }
+}
+
+.auto-rojo > img {
+    width: 60%;
+}
+
+.auto-verde {
+    position: absolute;
+    z-index: 10;
+ /*   top: 1250px;
+    right: 640px; */
+    animation-duration: 10s;
+    animation-name: carroVerdeAvanzando;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carroVerdeAvanzando {
+    0% {
+        transform: translate(90px, -280px);
+    }
+    100% {
+        transform: translate(2480px, -1600px);
+    }
+}
+
+.auto-verde > img {
+    width: 60%;
+}
+
+.bulding-1 {
+    position: absolute;
+    z-index: -20;
+    top: 790px;
+    left: 305px;
+}
+
+.bulding-1 > img {
+    width: 100%;
+}
+
+.bulding-2 {
+    position: absolute;
+    z-index: 20;
+    top: 1005px;
+    left: 45px;
+}
+
+.bulding-2 > img {
+    width: 40%;
+}
+
+.bulding-3 {
+    position: absolute;
+    z-index: 20;
+    top: 1395px;
+    left: 265px;
+}
+
+.bulding-3 > img {
+    width: 80%;
+}
+
+.col__bg--style {
+    position: relative;
+}
+
+.col__bg--style > img {
+    width: 70%;
+}
+
+.linea-col {
+    background-color: var(--black-color);
+    height: 2px;
+    width: 100px;
+}
+
+.text-col1 {
+    padding-right: 40%;
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-col {
+    font-size: 0.7em;
+}
+
+.bg-contacto {
+    background-color: var(--bg-color-secondary);
+    width: 70%;
+    height: 190px;
+    border-radius: 15px;
+}
+
+.header__img__container {
+    position: relative;
+}
+
+.img1__container {
+    position: absolute;
+    z-index: 40;
+    left: 220px;
+    top: 120px;
+}
+.img1__container > img {
+    width: 60%;
+}
+.img2__container {
+    position: absolute;
+    z-index: 40;    
+}
+.img2__container > img {
+    width: 60%;
+}
+.img3__container {
+    position: absolute;
+    z-index: 40;
+    left: 250px;
+    top: 240px;
+}
+.img3__container > img {
+    width: 109%;
+}
+.img4__container {
+    position: absolute;
+    z-index: 40;
+    left: 28px;
+}
+.img4__container > img {
+    width: 107%; 
+}
+
+.animation-card-container .animation-card {
+    visibility: hidden;
+}
+
+.animation-card-container:hover .animation-card {
+    visibility: visible;
+    position: absolute;
+    left: 0px;
+    top: 660px;
+    text-align: center;
+}
+
+/* Responsive */ 
+
+@media (max-width: 599px) {
+
+    .rwd__header__container {
+        overflow: hidden;
+    }
+
+    .logo {
+        margin-top: 20px;
+        width: 27%;
+    }
+
+    .toggle {
+        border: none !important;
+        margin-left: 200px ;
+        margin-top: -40px;
+        margin-left: 250px;
+    }
+
+    .rwd__header__container {
+        height: 1100px;
+    }
+
+    .span-icon{
+        width: 55px;
+    }
+
+    .bg-button {
+        width: 270px !important  ;
+        height: 40px;
+        margin-left: 12px;
+    }
+
+    .icons__container--style {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons__container--style > img {
+        width: 35px;
+    }
+
+    .rwd--style {
+        position: relative;
+    }
+
+    .container__social--style {
+        width: 300px;
+        position: absolute;
+        top: 690px;
+        right: -40px;
+    }
+
+    .display--style-rwd {
+        position: absolute;
+        top: 790px;
+        left: 50px;
+        padding: 0 !important;
+    }
+
+    .icons-header-social {
+        width: 15%;
+        margin-left: 10px;
+    }
+
+    .icons-header {
+        margin: 20px;
+    }
+
+    .icons__container--style {
+        margin-right: 100px;
+    }
+
+    .img4__container {
+        z-index: 500 !important;
+        position: absolute;
+        top: 55px;
+        left: 147px !important;
+        width: 300px;
+    }
+
+    .img1__container {
+        z-index: 500 !important;
+        position: absolute;
+        top: 55px;
+        left: 202px !important;
+    }
+
+    .img1__container > img {
+        width: 140px !important;
+    }
+    
+    .img2__container {
+        z-index: 100 !important;
+        position: absolute;
+        top: 35px;
+        width: 95%;
+    }
+
+    .img3__container {
+        z-index: 2000 !important;
+        position: absolute;
+        top: 340px !important;
+        left: 58px !important;
+        width: 270px !important;
+    }
+
+    .bg-button {
+        height: 50px;
+        font-size: 1em !important;
+        margin: 0;
+    }
+    
+    .container__social--style {
+        top: 730px;
+        left: 20%;
+    }
+
+    .servicios-main-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .street-city__container {
+        background-color: #60b148;
+        background-image: url('./ciudad/ciudad-servicios-movil.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 940px;
+        width: 100%;
+    }
+    
+    .street-city {
+        display: none;
+    }
+
+    .auto-rojo {
+        position: absolute;
+        z-index: 60;
+        animation-duration: 15s;
+        animation-name: carroAvanzando;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 12%;
+    }
+
+    @keyframes carroAvanzando {
+        0% {
+            transform: translate(271px, 220px);
+        }
+        100% {
+            transform: translate(-900px, 860px);
+        }
+    }
+
+    .auto-verde {
+        position: absolute;
+        z-index: 70;
+    /*   top: 1250px;
+        right: 640px; */
+        animation-duration: 7s;
+        animation-name: carroVerdeAvanzando;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 12%;
+    }
+
+    @keyframes carroVerdeAvanzando {
+        0% {
+            transform: translate(50px, 359px);
+        }
+        100% {
+            transform: translate(290px, 240px);
+        }
+    }
+
+
+    .bulding-1 {
+        display: none;
+    }
+
+    .bulding-2 {
+        display: none;
+
+    }
+
+    .bulding-3 {
+        display: none;
+    }
+
+    .bg-contacto-container {
+        background: var(--bg-color-secondary);
+    }
+
+    .title--responsive {
+        font-size: 0.6em;
+    }
+    
+    .icon__image__title {
+        width: 30%;
+    }
+
+    .perfiles-container {
+        margin-top: 40px !important;
+    }
+
+    .img1__container {
+        position: absolute;
+        z-index: 40;
+        left: 220px;
+        top: 120px;
+        }
+        .img1__container > img {
+            width: 83%;
+        }
+        .img2__container {
+            position: absolute;
+            z-index: 40;    
+        }
+        .img2__container > img {
+            width: 60%;
+        }
+        .img3__container {
+            position: absolute;
+            z-index: 40;
+            left: 250px;
+            top: 240px;
+        }
+        .img3__container > img {
+            width: 129%;
+        }
+        .img4__container {
+            position: absolute;
+            z-index: 40;
+            left: 28px;
+        }
+        .img4__container > img {
+            width: 87%; 
+        }
+
+        .perfiles-container {
+            margin-top: 250px;
+        }
+
+        .responsive-card {
+            width: 220px;
+            height: 440px;
+        }
+
+        .card__text--style {
+            font-size: 0.7em;
+        }
+
+        .body-card {
+            padding: 5%;
+        }
+
+        .card-text {
+            font-size: 0.6em;
+        }
+
+        .youtube__icon--style {
+            width: 32px;
+        }
+        
+        .nostros__text--style {
+            font-size: 0.8em;
+        }
+
+        .nosotros__container {
+            padding: 50px;
+        }
+        .responsive-card-header {
+            position: relative;
+        }
+
+        .responsive-card-header > img {
+            top: 50px;
+        }
+
+        .col__bg--style {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .text-col1 {
+            width: 70%;
+            margin: 15% auto;
+            margin-left: 33%;
+        }
+
+        .p-col {
+            font-size: 0.5em;
+        }
+
+        .p-contacto {
+            font-size: 0.7em;
+        }
+        .bg-contacto {
+            width: 100%;
+            height: 60%;
+        }
+
+        .animation-card {
+            display: none;
+        }
+
+        .col-footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-footer {
+            width: 50% !important;
+        }
+        
+    .animation-card-container:hover .animation-card {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 385px;
+        text-align: center;
+    }
+
+    .animation-card-container:hover .animation-card img {
+        width: 15px;
+    }
+
+    .animation-card-container:hover .animation-card p {
+        font-size: 0.4em;
+    }
+
+ }
+
+ @media only screen and (min-width: 768px)  {
+
+
+    .display--style-rwd {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rwd__header__container {
+        overflow: hidden;
+    }
+    
+    .rwd--style {
+        height: 600px;
+    }
+
+    .bg-button {
+        background-color: var(--black-color) !important;
+        width: 62% !important;
+        margin-left: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 0.8em !important;
+    }
+    .icons__container--style {
+        margin-top: 10px;  
+        margin-right: 35px;
+        display: flex;   
+        justify-content: space-evenly; 
+    }
+    .icons-header {
+        width: 15%;
+    }
+    
+    .icons-header-social {
+        width: 5%;
+    }
+
+    .container__social--style {
+        position: absolute;
+        top: 500px !important;
+    }
+
+    .icons-header-social {
+        width: 40px;
+    }
+     .img1__container {
+        position: absolute;
+        z-index: 40;
+        left: 190px;
+        top: 120px;
+    }
+    .img1__container > img {
+        width: 63%;
+    }
+    .img2__container {
+        position: absolute;
+        z-index: 40;    
+    }
+    .img2__container > img {
+        width: 52%;
+    }
+    .img3__container {
+        position: absolute;
+        z-index: 40;
+        left: 187px;
+        top: 200px;
+        width: 129%;
+        overflow: hidden;
+    }
+
+    .img3__container{
+        width: 60%;
+    }
+
+    .img4__container {
+        position: absolute;
+        z-index: 40;
+        left: 108px;
+        top: 10px;
+        width: 107%;
+    }
+
+    .container__social--style {
+        top: 458px;
+        left: 320px;
+    }
+
+    .card-title {
+        font-size: 0.8em;
+    }
+    .card-text {
+        font-size: 0.8em;
+    }
+
+    .street-city   {
+        width: 100%;
+        top: -200px;
+    }
+
+    .bulding-1 {
+        width: 77%;
+        left: 170px;
+        top: 840px;
+    }
+
+    .bulding-2 {
+        width: 30%;
+        left: 30px;
+        top: 990px;
+    }
+
+    .bulding-3 {
+        width: 60%;
+        top: 1305px;
+        left: 180px;
+    }
+
+    .auto-rojo {
+        position: absolute;
+        z-index: 60;
+        animation-duration: 15s;
+        animation-name: carroAvanzando;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 12%;
+    }
+
+    @keyframes carroAvanzando {
+        0% {
+            transform: translate(-90px, 170px);
+        }
+        100% {
+            transform: translate(-1560px, 960px);
+        }
+    }
+
+    .auto-verde {
+        position: absolute;
+        z-index: 70;
+    /*   top: 1250px;
+        right: 640px; */
+        animation-duration: 7s;
+        animation-name: carroVerdeAvanzando;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 12%;
+    }
+
+    @keyframes carroVerdeAvanzando {
+        0% {
+            transform: translate(-850px, 620px);
+        }
+        100% {
+            transform: translate(190px, 40px);
+        }
+    }
+
+    .nostros__text--style {
+        font-size: 0.8em;
+    }
+
+    .text-col1 {
+        top: 90px;
+    }
+
+    .text-col1 > .title__objetivos {
+        font-size: 1.2em !important;
+    }
+
+    .text-col1 > .p-col {
+        font-size: 0.5em;
+    }
+
+    .text-col1 > .numero--style {
+        font-size: 1em !important;
+    }
+
+    .bg-contacto-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bg-contacto {
+        width: 80%;
+    }
+
+    .footer-ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 60px !important;
+    }
+
+    .animation-card {
+        display: none;
+    }
+
+    .animation-card-container:hover .animation-card {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 455px;
+        text-align: center;
+    }
+
+    .animation-card-container:hover .animation-card img {
+        width: 20px;
+    }
+
+    .animation-card-container:hover .animation-card p {
+        font-size: 0.6em;
+    }
+    .youtube__icon--style {
+        width: 35px;
+    }
+
+    .logo-footer {
+        width: 50%;
+    }
+
+    #nosotros {
+        margin-top: 80px !important;
+    }
+
+
+    }
+
+
+
+@media only screen and (min-width: 992px) {
+    .container__social--style {
+        top: 600px !important;
+        left: 62px !important;
+    }
+    .display--style-rwd {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .display--style-rwd {
+        padding: 10px !important;
+    }
+    .bg-button {
+        margin: 0;
+        width: 160px !important;
+    }
+    .icons-header {
+        width: 30px;
+    }
+
+    .icons__container--style {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        width: 35%;
+    }
+
+    .img1__container {
+        width: 46%;
+        margin-left: 90px;
+    }
+
+    .img2__container {
+        width: 90% !important;
+    }
+
+    .img3__container {
+        width: 50%;
+        left: 290px;
+        top: 240px;
+    }
+
+    .img4__container {
+        width: 85%;
+    }
+
+    .bulding-1 {
+        top: 960px;
+        width: 60%;
+        left: 340px;
+    }
+
+    .bulding-2 {
+        top: 1210px;
+        width: 20%;
+        left: 80px;
+    }
+
+    .bulding-3 {
+        top: 1490px;
+        width: 40%;
+        left: 390px;
+    }
+
+    .auto-rojo {
+        position: absolute;
+        z-index: 60;
+        animation-duration: 10s;
+        animation-name: carroAvanzando;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 10%;
+    }
+
+    @keyframes carroAvanzando {
+        0% {
+            transform: translate(-110px, 210px);
+        }
+        100% {
+            transform: translate(-1360px, 960px);
+        }
+
+    }
+
+    .auto-verde {
+        position: absolute;
+        z-index: 70;
+    /*   top: 1250px;
+        right: 640px; */
+        animation-duration: 10s;
+        animation-name: carroVerdeAvanzando;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 10%;
+    }
+
+    @keyframes carroVerdeAvanzando {
+        0% {
+            transform: translate(-890px, 720px);
+        }
+        100% {
+            transform: translate(190px, 90px);
+        }
+
+    }
+
+    .animation-card-container:hover .animation-card {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 500px;
+        text-align: center;
+    }
+
+    .animation-card-container:hover .animation-card img {
+        width: 25px;
+    }
+
+    .animation-card-container:hover .animation-card p {
+        font-size: 0.8em;
+    } 
+
+    #nosotros {
+        margin-top: 50px;
+    }
+
+    .nostros__text--style {
+        font-size: 0.8em;
+    }
+
+    .text-col1 {
+        top: 140px
+    }
+
+    .text-col1 > .title__objetivos {
+        font-size: 1.2em !important;
+    }
+
+    .text-col1 > .p-col {
+        font-size: 0.7em;
+    }
+
+    .text-col1 > .numero--style {
+        margin-top: 12px;
+        font-size: 1em !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container__social--style {
+        left: 100px !important;
+        padding: 0px !important;
+    }
+    .bg-button {
+        margin-left: 3%;
+    }
+    .display--style-rwd {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .img1__container {
+        width: 46%;
+        margin-left: 230px;
+    }
+
+    .img2__container {
+        width: 90%;
+    }
+
+    .img3__container {
+        width: 50%;
+        left: 390px;
+        top: 280px;
+    }
+
+    .img4__container {
+        width: 55%;
+    }
+
+    .bulding-1 {
+        width: 40%;
+        left: 44%;
+        top: 135%;
+    }
+
+    .bulding-2 {
+        width: 20%;
+        left: 4%;
+        top: 163%;
+    }
+
+    .bulding-3 {
+        width: 40%;
+        left: 44%;
+        top: 206%;
+    }
+
+    .auto-rojo {
+        position: absolute;
+        z-index: 60;
+        animation-duration: 10s;
+        animation-name: carroAvanzando;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 10%;
+    }
+
+    @keyframes carroAvanzando {
+        0% {
+            transform: translate(-170px, 320px);
+        }
+        100% {
+            transform: translate(-1360px, 960px);
+        }
+
+
+    }
+
+    .auto-verde {
+        position: absolute;
+        z-index: 70;
+    /*   top: 1250px;
+        right: 640px; */
+        animation-duration: 10s;
+        animation-name: carroVerdeAvanzando;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        width: 10%;
+    }
+
+    @keyframes carroVerdeAvanzando {
+        0% {
+            transform: translate(-1590px, 1220px);
+        }
+        100% {
+            transform: translate(290px, 90px);
+        }
+
+    }
+
+    
+    .animation-card-container:hover .animation-card {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 685px;
+        text-align: center;
+    }
+
+    .animation-card-container:hover .animation-card img {
+        width: 55px;
+    }
+
+    .animation-card-container:hover .animation-card p {
+        font-size: 1em;
+    }
+
+    .perfiles-container {
+        margin-bottom: 100px;
+    }
+
+    #nosotros {
+        margin-top: 200px;
+    }
+
+    .nostros__text--style {
+        font-size: 0.8em;
+    }
+
+    .text-col1 {
+        top: 35%;
+        left: 5%;
+    }
+
+    .text-col1 > .title__objetivos {
+        font-size: 1.8em !important;
+    }
+
+    .text-col1 > .p-col {
+        font-size: 1em;
+    }
+
+    .text-col1 > .numero--style {
+        margin-top: 12px;
+        font-size: 1em !important;
+    }
+
+}

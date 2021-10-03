@@ -1,0 +1,571 @@
+:root {
+    --primary-color: #6CC57C;
+    --bg-color-secondary:#D0F0D6 ;
+    --black-color: #23233C;
+    --gray-color: #D0F0D6;
+    --white-color: #F2F6FF;
+    --bg-primary: #f2f6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.nav-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #7F8DA0;
+}
+
+.bg-color {
+    background-color: var(--bg-primary);
+}
+
+.a {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    color: var(--black-color);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.title-2 {
+    color: var(--primary-color);
+}
+
+.title-3 {
+    color: #0a8521;
+    font-weight: bold;
+}
+
+.bg-button {
+    background-color: var(--black-color) !important;
+    width: 42% !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em !important;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 33%
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background: var(--black-color);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.icons-header {
+    width: 7%;
+}
+
+.header-image {
+    width: 30em;
+}
+
+.font-size {
+    font-size: 0.9em !important;
+    font-weight: 100 !important;
+}
+
+.bg-card {
+    background-color: #D0F0D6;
+    background-image: url('./Foto\ \(2\).png');
+    background-size: cover;
+}
+
+.card {
+    border: 2px dashed #51EFC5  !important;
+}
+
+.bg-footer {
+    background-color: var(--gray-color);
+    background-image: url('./Enmascarar\ grupo\ 9.png');
+    background-size: cover;
+}
+
+
+.street-city {
+    margin-top: 200px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.auto-rojo {
+    position: absolute;
+    z-index: 10;
+    animation-duration: 10s;
+    animation-name: carroAvanzando;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carroAvanzando {
+    0% {
+        transform: translate(800px, -700px);
+    }
+    100% {
+        transform: translate(0px, -250px);
+    }
+}
+
+.auto-rojo > img {
+    width: 60%;
+}
+
+.auto-verde {
+    position: absolute;
+    z-index: 10;
+ /*   top: 1250px;
+    right: 640px; */
+    animation-duration: 10s;
+    animation-name: carroVerdeAvanzando;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carroVerdeAvanzando {
+    0% {
+        transform: translate(90px, -280px);
+    }
+    100% {
+        transform: translate(2480px, -1600px);
+    }
+}
+
+.auto-verde > img {
+    width: 60%;
+}
+
+.bulding-1 {
+    position: absolute;
+    z-index: -20;
+    top: 790px;
+    left: 305px;
+}
+
+.bulding-1 > img {
+    width: 100%;
+}
+
+.bulding-2 {
+    position: absolute;
+    z-index: 20;
+    top: 1005px;
+    left: 45px;
+}
+
+.bulding-2 > img {
+    width: 40%;
+}
+
+.bulding-3 {
+    position: absolute;
+    z-index: 20;
+    top: 1395px;
+    left: 265px;
+}
+
+.bulding-3 > img {
+    width: 80%;
+}
+
+.col__bg--style {
+    position: relative;
+}
+
+.col__bg--style > img {
+    width: 70%;
+}
+
+.linea-col {
+    background-color: var(--black-color);
+    height: 2px;
+    width: 100px;
+}
+
+.text-col1 {
+    padding-right: 40%;
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    background-color: var(--primary-color);
+}
+
+.p-col {
+    font-size: 0.7em;
+}
+
+.bg-contacto {
+    background-color: var(--bg-color-secondary);
+    width: 70%;
+    height: 190px;
+    border-radius: 15px;
+}
+
+.header__img__container {
+    position: relative;
+}
+
+.img1__container {
+    position: absolute;
+    z-index: 40;
+    left: 220px;
+    top: 120px;
+}
+.img1__container > img {
+    width: 60%;
+}
+.img2__container {
+    position: absolute;
+    z-index: 40;    
+}
+.img2__container > img {
+    width: 60%;
+}
+.img3__container {
+    position: absolute;
+    z-index: 40;
+    left: 250px;
+    top: 240px;
+}
+.img3__container > img {
+    width: 109%;
+}
+.img4__container {
+    position: absolute;
+    z-index: 40;
+    left: 28px;
+}
+.img4__container > img {
+    width: 107%; 
+}
+
+/* Responsive */ 
+
+@media (max-width: 599px) {
+
+    .toggle {
+        border: none !important;
+        margin-left: 200px ;
+        margin-top: -40px;
+    }
+
+    .rwd__header__container {
+        height: 900px;
+    }
+
+    .bg-button {
+        width: 270px !important  ;
+        height: 40px;
+    }
+
+    .icons__container--style {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons__container--style > img {
+        width: 35px;
+    }
+
+    .rwd--style {
+        position: relative;
+    }
+
+    .container__social--style {
+        position: absolute;
+        top: 690px;
+        left: 55px;
+    }
+
+    .display--style-rwd {
+        position: absolute;
+        top: 790px;
+    }
+
+    .icons-header-social {
+        width: 15%;
+    }
+
+    .icons-header {
+        margin: 20px;
+    }
+
+    .img4__container {
+        position: absolute;
+        top: 55px;
+        right: 55px;
+    }
+
+    .img1__container {
+        position: absolute;
+        top: 55px;
+        left: 172px !important;
+    }
+
+    .img1__container > img {
+        width: 140px !important;
+    }
+    
+    .img2__container {
+        position: absolute;
+        top: 35px;
+        width: 73%;
+    }
+
+    .img2__container > img  {
+        background-color: #CACCCB ;
+        border-radius: 15px;
+    }
+
+    .img3__container {
+        position: absolute;
+        top: 350px !important;
+        left: 68px !important;
+    }
+
+    .img3__container > img {
+        width: 240px !important;
+    }
+    
+    .street-city__container {
+        height: 800px;
+    }
+    
+    .street-city {
+        background: #26993b;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .auto-rojo {
+        position: absolute;
+        z-index: 10;
+        animation-duration: 15s;
+        animation-name: carroAvanzando;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes carroAvanzando {
+        0% {
+            transform: translate(220px, -210px);
+        }
+        100% {
+            transform: translate(-320px, 90px);
+        }
+    }
+
+    .auto-rojo > img {
+        width: 33%;
+    }
+
+    .auto-verde {
+        position: absolute;
+        z-index: 10;
+    /*   top: 1250px;
+        right: 640px; */
+        animation-duration: 10s;
+        animation-name: carroVerdeAvanzando;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes carroVerdeAvanzando {
+        0% {
+            transform: translate(-320px, 100px);
+        }
+        100% {
+            transform: translate(290px, -260px);
+        }
+    }
+
+    .auto-verde > img {
+        width: 33%;
+    }
+
+    .bulding-1 {
+        position: absolute;
+        z-index: 10;
+        top: 1005px;
+        left: 20px;
+    }
+
+    .bulding-1 > img {
+        width: 80%;
+    }
+
+    .bulding-2 {
+        position: absolute;
+        z-index: 30;
+        top: 1359px;
+        left: 40px;
+    }
+
+    .bulding-2 > img {
+        width: 80%;
+    }
+
+    .bulding-3 {
+        position: absolute;
+        z-index: 20;
+        top: 1285px;
+        left: 65px;
+    }
+
+    .bulding-3 > img {
+        width: 80%;
+    }
+
+    .bg-contacto-container {
+        background: var(--bg-color-secondary);
+    }
+
+    .title--responsive {
+        font-size: 0.6em;
+    }
+    
+    .icon__image__title {
+        width: 30%;
+    }
+
+    .img1__container {
+        position: absolute;
+        z-index: 40;
+        left: 220px;
+        top: 120px;
+        }
+        .img1__container > img {
+            width: 83%;
+        }
+        .img2__container {
+            position: absolute;
+            z-index: 40;    
+        }
+        .img2__container > img {
+            width: 60%;
+        }
+        .img3__container {
+            position: absolute;
+            z-index: 40;
+            left: 250px;
+            top: 240px;
+        }
+        .img3__container > img {
+            width: 129%;
+        }
+        .img4__container {
+            position: absolute;
+            z-index: 40;
+            left: 28px;
+        }
+        .img4__container > img {
+            width: 87%; 
+        }
+
+ }
+
+ @media only screen and (min-width: 768px)  {
+    .display--style-rwd {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-button {
+        background-color: var(--black-color) !important;
+        width: 62% !important;
+        margin-left: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 0.8em !important;
+    }
+    .icons__container--style {
+        margin-top: 10px;
+        margin-left: 35px;        
+    }
+    .icons-header {
+        width: 15%;
+    }
+    
+    .icons-header-social {
+        width: 5%;
+    }
+
+    .container__social--style {
+        position: absolute;
+        top: 550px;
+        left: 300px;
+    }
+
+     .img1__container {
+    position: absolute;
+    z-index: 40;
+    left: 220px;
+    top: 120px;
+    }
+    .img1__container > img {
+        width: 83%;
+    }
+    .img2__container {
+        position: absolute;
+        z-index: 40;    
+    }
+    .img2__container > img {
+        width: 60%;
+    }
+    .img3__container {
+        position: absolute;
+        z-index: 40;
+        left: 250px;
+        top: 240px;
+    }
+    .img3__container > img {
+        width: 129%;
+    }
+    .img4__container {
+        position: absolute;
+        z-index: 40;
+        left: 28px;
+    }
+    .img4__container > img {
+        width: 107%; 
+    }
+    .card-title {
+        font-size: 0.8em;
+    }
+    .card-text {
+        font-size: 0.8em;
+    }
+    }
